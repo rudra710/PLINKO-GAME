@@ -5,7 +5,7 @@ class Particle{
             friction: 0
         }
         this.body = Bodies.circle(x,y,radius,options);
-        this.clor =color(random("yellow"), random("blue"), random("red"));
+        this.clor =color(random(0,255), random(0,255), random(0,255));
         this.radius = radius;
         World.add(world, this.body);
     }
