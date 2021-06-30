@@ -5,7 +5,7 @@ class Particle{
             friction: 0
         }
         this.body = Bodies.circle(x,y,radius,options);
-       
+        this.clor =color(random("yellow"), random("blue"), random("red"));
         this.radius = radius;
         World.add(world, this.body);
     }
@@ -17,7 +17,7 @@ class Particle{
         noStroke();
         translate(pos.x,pos.y);
        
-        fill("yellow");
+        fill(this.color);
         ellipse(0,0,this.radius*2);
         pop();
     }
